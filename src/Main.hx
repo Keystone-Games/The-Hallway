@@ -17,7 +17,7 @@ class Main extends Sprite
 	public static function begin()
 	{
 		trace("Loading engine...");
-		trace("Engine version: " + Reference.app_version);
+		trace("Engine version: " + Reference.APP_VERSION);
 		Lib.current.addChild(new FlxGame(0, 0, MenuState, 1, 60, 60, true, true));
 		trace("Engine loaded!");
 	}

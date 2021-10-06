@@ -15,7 +15,7 @@ class MenuState extends FlxState
 	{
 		super.create();
 
-		title = new FlxText(0, 0, 0, "The Hallway");
+		title = new FlxText(0, 0, 0, "The Hallway", 64);
 		title.screenCenter(X);
 		add(title);
 	}
