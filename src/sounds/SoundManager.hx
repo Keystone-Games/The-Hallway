@@ -4,19 +4,20 @@ class SoundManager {
   public static function playSFX(sound:SFX) {
     switch (sound) {
       case BUTTON_CLICK:
-        FlxG.sound.play(GameAssets.BUTTON_CLICK__png);
+        FlxG.sound.play(GameAssets.BUTTON_CLICK__ogg);
         break;
       case BUTTON_CLICK_FAIL:
-        FlxG.sound.play(GameAssets.BUTTON_CLICK_FAIL__png);
+        FlxG.sound.play(GameAssets.BUTTON_CLICK_FAIL__ogg);
         break;
       case BUTTON_HOVER:
-        FlxG.sound.play(GameAssets.BUTTON_HOVER__png);
+        FlxG.sound.play(GameAssets.BUTTON_HOVER__ogg);
         break;
     }
   }
   public static function init() {
-    FlxG.sound.play(GameAssets.BUTTON_CLICK_png);
-    
+    FlxG.sound.play(GameAssets.BUTTON_CLICK__ogg);
+    FlxG.sound.play(GameAssets.BUTTON_CLICK_FAIL__ogg);
+    FlxG.sound.play(GameAssets.BUTTON_HOVER__ogg);
   }
 }
 
