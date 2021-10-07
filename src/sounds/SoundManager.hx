@@ -4,13 +4,13 @@ class SoundManager {
   public static function playSFX(sound:SFX) {
     switch (sound) {
       case BUTTON_CLICK:
-        FlxG.sound.play(Assets.SOUND_BUTTON_CLICK);
+        FlxG.sound.play(Assets.BUTTON_CLICK__png);
         break;
       case BUTTON_CLICK_FAIL:
-        FlxG.sound.play(Assets.SOUND_BUTTON_CLICK_FAIL);
+        FlxG.sound.play(Assets.BUTTON_CLICK_FAIL__png);
         break;
       case BUTTON_HOVER:
-        FlxG.sound.play(Assets.SOUND_BUTTON_HOVER);
+        FlxG.sound.play(Assets.BUTTON_HOVER__png);
         break
     }
   }
