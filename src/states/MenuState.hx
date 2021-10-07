@@ -32,5 +32,12 @@ class MenuState extends FlxState
 	public override function update(dt:Float)
 	{
 		super.update(dt);
+		
+		if (FlxG.mouse.overlaps(playButton)) {
+			SoundManager.playSFX(BUTTON_HOVER);
+			if (FlxG.mouse.justPressed) {
+				SoundManager.playSFX(BUTTON_CLICK);
+			}
+		}
 	}
 }
