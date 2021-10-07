@@ -21,4 +21,7 @@ class Main extends Sprite
 		Lib.current.addChild(new FlxGame(0, 0, MenuState, 1, 60, 60, true, true));
 		trace("Engine loaded!");
 	}
+	public static function init() {
+		SoundManager.init();
+	}
 }
