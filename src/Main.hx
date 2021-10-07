@@ -11,7 +11,7 @@ class Main extends Sprite
 	public override function new()
 	{
 		super();
-		begin();
+		init();
 	}
 
 	public static function begin()
@@ -22,6 +22,7 @@ class Main extends Sprite
 		trace("Engine loaded!");
 	}
 	public static function init() {
+		begin();
 		SoundManager.init();
 	}
 }
