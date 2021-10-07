@@ -11,8 +11,12 @@ class SoundManager {
         break;
       case BUTTON_HOVER:
         FlxG.sound.play(GameAssets.BUTTON_HOVER__png);
-        break
+        break;
     }
+  }
+  public static function init() {
+    FlxG.sound.play(GameAssets.BUTTON_CLICK_png);
+    
   }
 }
 
