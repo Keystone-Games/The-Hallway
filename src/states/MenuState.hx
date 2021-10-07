@@ -14,10 +14,19 @@ class MenuState extends FlxState
 	public override function create()
 	{
 		super.create();
-
-		title = new FlxText(0, 0, 0, "The Hallway", 64);
+		
+		background = new FlxSprite();
+		add(background);
+		
+		title = new FlxText(0, 0, 0, "The Hallway").setFormat("mosterrat", 64);
 		title.screenCenter(X);
 		add(title);
+		
+		playButton = new FlxSprite();
+		add(playButton);
+		
+		optionsButton = new FlxText(0, 0, 0, "Options").setFormat("monsterrat", 24);
+		add(optionsButton);
 	}
 
 	public override function update(dt:Float)
