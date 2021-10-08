@@ -20,4 +20,20 @@ class LevelBase extends FlxState {
       rooms: {}
     };
   }
+  public static function makePerson(type:Person) {
+    var p = {ai:{},sprite:{}};
+    
+    switch (type) {
+      case teacher:
+        p.sprite = {};
+        break;
+        
+      case student:
+        break;
+    }
+    
+    return p;
+  }
 }
+
+extern enum Person { teacher; student; }
