@@ -23,6 +23,7 @@ class MenuState extends FlxState
 		add(title);
 		
 		playButton = new FlxSprite();
+		playButton.makeGraphic(200, 100, FlxColor.RED);
 		add(playButton);
 		
 		optionsButton = new FlxText(0, 0, 0, "Options").setFormat("monsterrat", 24);
