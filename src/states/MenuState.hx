@@ -40,5 +40,11 @@ class MenuState extends FlxState
 				SoundManager.playSFX(BUTTON_CLICK);
 			}
 		}
+		if (FlxG.mouse.overlaps(optionsButton)) {
+			SoundManager.playSFX(BUTTON_HOVER);
+			if (FlxG.mouse.justPressed) {
+				SoundManager.playSFX(BUTTON_CLICK):
+			}
+		}
 	}
 }
