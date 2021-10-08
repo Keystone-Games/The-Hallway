@@ -38,6 +38,7 @@ class MenuState extends FlxState
 			SoundManager.playSFX(BUTTON_HOVER);
 			if (FlxG.mouse.justPressed) {
 				SoundManager.playSFX(BUTTON_CLICK);
+				FlxG.switchState( new LevelSelectorState() );
 			}
 		}
 		if (FlxG.mouse.overlaps(optionsButton)) {
