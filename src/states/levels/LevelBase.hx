@@ -51,6 +51,8 @@ class LevelBase extends FlxState
 					}
 				};
 
+				p.ai = {};
+
 			case student:
 		}
 
