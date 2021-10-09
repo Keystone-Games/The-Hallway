@@ -51,7 +51,19 @@ class LevelBase extends FlxState
 					}
 				};
 
-				p.ai = {};
+				p.ai = {
+					whipChild: function(t):Bool
+					{
+						if (t.csprite.overlaps(Child))
+						{
+							return true;
+						}
+						else
+						{
+							return false;
+						}
+					}
+				};
 
 			case student:
 		}
