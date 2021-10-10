@@ -19,6 +19,19 @@ class SoundManager
 		}
 	}
 
+	public static function playMusic(song:Music)
+	{
+		switch (song)
+		{
+			case MENU_THEME:
+				#if html
+				FlxG.sound.playMusic(GameAssets.MENU_THEME__mp3, 1, true);
+				#else
+				FlxG.sound.playMusic(GameAssets.MENU_THEME__wav, 1, true);
+				#end
+		}
+	}
+
 	public static function init()
 	{
 		FlxG.sound.play(GameAssets.BUTTON_CLICK__ogg);
@@ -32,4 +45,9 @@ extern enum SFX
 	BUTTON_CLICK;
 	BUTTON_CLICK_FAIL;
 	BUTTON_HOVER;
+}
+
+extern enum Music
+{
+	MENU_THEME;
 }

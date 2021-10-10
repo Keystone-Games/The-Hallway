@@ -4,6 +4,7 @@ import config.Reference;
 import flixel.FlxGame;
 import openfl.Lib;
 import openfl.display.Sprite;
+import sounds.SoundManager;
 import states.MenuState;
 
 class Main extends Sprite
@@ -21,8 +22,11 @@ class Main extends Sprite
 		Lib.current.addChild(new FlxGame(0, 0, MenuState, 1, 60, 60, true, true));
 		trace("Engine loaded!");
 	}
-	public static function init() {
+
+	public static function init()
+	{
 		begin();
 		SoundManager.init();
+		SoundManager.playMusic(MENU_THEME);
 	}
 }
