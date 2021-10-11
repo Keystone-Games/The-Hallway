@@ -8,3 +8,8 @@ class Entity
 
 	public static function update(dt:Float) {}
 }
+
+extern enum Person {
+	teacher;
+	student;
+}
