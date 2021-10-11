@@ -34,7 +34,7 @@ class LevelBase extends FlxState
 		};
 	}
 
-	public static function makePerson(type:Person)
+	/*public static function makePerson(type:Person)
 	{
 		var p = {ai: {}, sprite: {}};
 
@@ -69,7 +69,7 @@ class LevelBase extends FlxState
 		}
 
 		return p;
-	}
+	}*/
 }
 
 extern enum Person
