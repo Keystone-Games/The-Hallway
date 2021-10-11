@@ -71,9 +71,3 @@ class LevelBase extends FlxState
 		return p;
 	}*/
 }
-
-extern enum Person
-{
-	teacher;
-	student;
-}
