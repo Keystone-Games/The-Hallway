@@ -45,6 +45,7 @@ extern enum SFX
 	BUTTON_CLICK;
 	BUTTON_CLICK_FAIL;
 	BUTTON_HOVER;
+	CHILD_WHIP;
 }
 
 extern enum Music
