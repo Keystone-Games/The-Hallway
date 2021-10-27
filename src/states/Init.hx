@@ -12,6 +12,8 @@ class Init extends FlxState {
     sprite_entity_TEACHER_IDLE_0.loadGraphic(GameAssets.ENTITY_TEACHER_IDLE_0__png);
     add(sprite_entity_TEACHER_IDLE_0);
     remove(sprite_entity_TEACHER_IDLE_0);
+    
+    FlxG.switchState(new MenuState());
   }
   public override function update(dt:Float) {
     super.update(dt);
