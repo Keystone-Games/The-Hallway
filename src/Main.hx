@@ -6,6 +6,7 @@ import openfl.Lib;
 import openfl.display.Sprite;
 import sounds.SoundManager;
 import states.MenuState;
+import states.Init;
 
 class Main extends Sprite
 {
@@ -19,7 +20,7 @@ class Main extends Sprite
 	{
 		trace("Loading engine...");
 		trace("Engine version: " + Reference.APP_VERSION);
-		Lib.current.addChild(new FlxGame(0, 0, MenuState, 1, 60, 60, true, true));
+		Lib.current.addChild(new FlxGame(0, 0, Init, 1, 60, 60, true, true));
 		trace("Engine loaded!");
 	}
 
