@@ -29,4 +29,6 @@ class Main extends Sprite
 		SoundManager.init();
 		SoundManager.playMusic(MENU_THEME);
 	}
+	
+	public static function onExit()
 }
